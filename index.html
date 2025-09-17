@@ -99,6 +99,19 @@
             50% { opacity: 1; }
             100% { transform: translateY(110vh); opacity: 0; }
         }
+        .elevating-investors {
+            font-size: 1.5rem;
+            font-weight: 500;
+            text-align: center;
+            color: #1e8449;
+        }
+        .standee-graphic {
+            width: 200px;
+            height: 200px;
+            background-color: #1e8449;
+            transform: rotate(45deg);
+            border-radius: 10px;
+        }
     </style>
     <style>
         body {
@@ -123,47 +136,30 @@
 <body class="bg-gray-900 text-gray-100">
     <div class="container py-8">
         <div class="card text-center fade-in">
-             <div class="mb-8 fade-in">
-                <div class="w-full h-48 overflow-hidden rounded-lg shadow-lg">
-                    <img src="istockphoto-1432932844-612x612.jpg" alt="Biểu đồ tài chính" class="w-full h-full object-cover">
-                </div>
+            <!-- Phần logo và tên hội thảo -->
+            <div class="flex flex-col items-center mb-8">
+                <img src="https://via.placeholder.com/150x50.png?text=Vietcap" alt="Logo Vietcap" class="mb-4">
+                <p class="text-xl font-light text-gray-300">Hội thảo</p>
+                <h1 class="text-3xl sm:text-4xl font-bold mb-2 text-green-600">NÂNG TẦM NHÀ ĐẦU TƯ</h1>
+                <p class="text-sm text-gray-400 mt-2">Vietcap Mỹ Đình</p>
             </div>
 
-            <h1 class="text-3xl sm:text-4xl font-bold mb-2 text-green-600 fade-in">NÂNG TẦM NHÀ ĐẦU TƯ</h1>
-            <p class="text-xl font-light text-gray-300 fade-in">Hội thảo chuyên sâu về thị trường chứng khoán</p>
-            
-            <p class="text-sm sm:text-base mt-6 mb-6 fade-in">
-                Thị trường đang trong giai đoạn chờ đợi thông tin từ Fed. Đây chính là lúc thích hợp để bạn lắng nghe những phân tích chuyên sâu từ các chuyên gia hàng đầu và trang bị kiến thức vững vàng cho hành trình đầu tư sắp tới.
-            </p>
-
-            <div class="flex flex-col md:flex-row justify-center items-center md:space-x-8 space-y-4 md:space-y-0 text-left mb-8 fade-in">
-                <div class="flex items-center space-x-3">
-                    <span class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                        </svg>
-                    </span>
-                    <span class="font-medium">8h00, ngày 20/09/2025</span>
-                </div>
-                <div class="flex items-center space-x-3">
-                    <span class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                        </svg>
-                    </span>
-                    <span class="font-medium">The Matrix One – Số 1 Lê Quang Đạo, Từ Liêm, Hà Nội</span>
-                </div>
+            <!-- Phần hình tam giác và slogan -->
+            <div class="relative w-48 h-48 mx-auto my-8 flex items-center justify-center">
+                <div class="standee-graphic"></div>
+                <p class="elevating-investors absolute bottom-4 w-full text-center">Elevating Investors</p>
             </div>
 
+            <!-- Phần ảnh diễn giả -->
             <div class="flex flex-col sm:flex-row items-center justify-center sm:space-x-8 space-y-6 sm:space-y-0 mt-8 mb-8 fade-in">
-                <img src="swap_2025-07-24_15-44-12.png" alt="Ảnh diễn giả" class="speaker-image">
+                <img src="z6921265550490_b4531824110eb996065a75bd09203f17.jpg" alt="Ảnh diễn giả" class="speaker-image">
                 <div class="text-center sm:text-left">
                     <h3 class="text-xl font-bold text-green-500">Mr. Tạ Thanh Thao</h3>
                     <p class="text-sm text-gray-400">Giám đốc Tư vấn Vietcap miền Bắc</p>
                 </div>
             </div>
 
+            <!-- Phần nội dung và thông tin liên hệ -->
             <div class="mt-8 fade-in">
                 <h3 class="text-2xl font-bold text-center text-green-500 mb-4">Nội dung chính</h3>
                 <ul class="text-left list-disc list-inside space-y-2 max-w-md mx-auto">
@@ -172,8 +168,10 @@
                 </ul>
             </div>
 
-            <div class="mt-12 fade-in">
-                <a href="#" class="cta-button">ĐĂNG KÝ NGAY</a>
+            <!-- Phần QR Code và nút đăng ký -->
+            <div class="mt-12 fade-in flex flex-col items-center">
+                 <img src="istockphoto-1432932844-612x612.jpg" alt="Mã QR" class="mb-4 w-32 h-32 rounded-lg">
+                <a href="#" class="cta-button">MỞ TÀI KHOẢN NGAY</a>
             </div>
         </div>
         
